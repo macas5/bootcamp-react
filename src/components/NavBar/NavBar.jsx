@@ -3,13 +3,11 @@ import './NavBar.css'
 
 const NavBar = ({linkArray}) => {
     
-  const mappedLinks = linkArray.map((link) => {
-    return (
+  const mappedLinks = linkArray.map((link) => 
     <Link className='link' to={link.path}>
         <span>{link.name}</span>
     </Link>
-    )
-  });
+  );
 
   return (
     <div className="navBar">
